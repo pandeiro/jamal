@@ -1,2 +1,2 @@
-{:requires [app adzerk.boot-reload]
+{:requires [app]
  :init-fns [app/init]}
