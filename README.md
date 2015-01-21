@@ -1,22 +1,24 @@
-# mies
+# jamal
 
-A minimal ClojureScript template.
+A [minimal](https://www.youtube.com/watch?v=FU1hm7KlfT8) ClojureScript template (using Boot).
 
 ## Usage
 
 To create a new project: 
 ```
-lein new mies hello-world
-cd hello-world
+git clone git://github.com/pandeiro/jamal myapp
+cd myapp
+boot dev
 ```
 
-To compile clojurescript and get a working web-page:
-```
-lein cljsbuild auto
-```
+...and navigate to http://localhost:8080.
+
 
 ## License
 
+Copyright © 2015 Murphy McMahon
+
+Original mies template
 Copyright © 2013 David Nolen
 
 Distributed under the Eclipse Public License either version 1.0 or (at
