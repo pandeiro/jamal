@@ -14,3 +14,7 @@
    (cljs :optimizations :none, :source-map true)
    (serve :dir "target", :port 8080)))
 
+(deftask release []
+  (comp
+   (cljs :optimizations :advanced)
+   (sift :include #{#"(^index\.html|^main\.js)"})))
