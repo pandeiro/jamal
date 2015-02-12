@@ -4,6 +4,8 @@ A [minimal](https://www.youtube.com/watch?v=FU1hm7KlfT8) ClojureScript template 
 
 ## Usage
 
+### Development
+
 To create a new project: 
 ```
 git clone git://github.com/pandeiro/jamal myapp
@@ -11,7 +13,15 @@ cd myapp
 boot dev
 ```
 
-...and navigate to http://localhost:8080.
+...and navigate to [http://localhost:8080](http://localhost:8080).
+
+### Release
+
+```
+boot release
+```
+
+...assets will be in the `target` directory.
 
 
 ## License
