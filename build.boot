@@ -11,8 +11,6 @@
 (deftask dev []
   (comp
    (watch)
-   (cljs :optimizations    :none
-         :source-map       true
-         :compiler-options {:cache-analysis true})
+   (cljs :optimizations :none, :source-map true)
    (serve :dir "target", :port 8080)))
 
