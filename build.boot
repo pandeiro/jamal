@@ -1,7 +1,7 @@
 (set-env!
  :source-paths    #{"src"}
  :resource-paths  #{"html" "conf"}
- :dependencies    '[[adzerk/boot-cljs   "0.0-2760-0"]
+ :dependencies    '[[adzerk/boot-cljs   "0.0-2814-1"]
                     [pandeiro/boot-http "0.6.2"]])
 
 (require
