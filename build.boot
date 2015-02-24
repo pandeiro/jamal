@@ -6,11 +6,13 @@
 
 (require
  '[adzerk.boot-cljs   :refer [cljs]]
+ '[adzerk.boot-reload :refer [reload]]
  '[pandeiro.boot-http :refer [serve]])
 
 (deftask dev []
   (comp
    (watch)
+   (reload :on-jsload 'app/init)
    (cljs :optimizations :none, :source-map true)
    (serve :dir "target", :port 8080)))
 
