@@ -2,7 +2,7 @@
  :source-paths    #{"src"}
  :resource-paths  #{"html" "conf"}
  :dependencies    '[[adzerk/boot-cljs   "0.0-2814-3"]
-                    [adzerk/boot-reload "0.2.4"]
+                    [adzerk/boot-reload "0.2.6"]
                     [pandeiro/boot-http "0.6.2"]])
 
 (require
