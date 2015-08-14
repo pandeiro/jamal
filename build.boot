@@ -18,7 +18,7 @@
    (watch)
    (reload :on-jsload 'frontend.dev/refresh)
    (less)
-   (cljs :optimizations :none, :source-map true)
+   (cljs)
    (serve :port 8080)))
 
 (deftask release []
