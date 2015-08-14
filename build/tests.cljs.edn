@@ -1,0 +1,2 @@
+{:requires [frontend.tests]
+ :init-fns [frontend.tests/run]}
