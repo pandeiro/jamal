@@ -2,9 +2,9 @@
 
 A [minimal](https://www.youtube.com/watch?v=FU1hm7KlfT8) ClojureScript template using Boot.
 
-- Auto-compiles ClojureScript for development and release
-- Auto-compiles LESS to CSS
-- Tests ClojureScript code
+- Auto-compiles ClojureScript and LESS in development
+- Includes ClojureScript tests
+- Produces minified release build
 
 ## Usage
 
