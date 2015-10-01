@@ -1,8 +1,8 @@
 (set-env!
  :source-paths    #{"src" "test" "styles"}
  :resource-paths  #{"html" "build"}
- :dependencies    '[[adzerk/boot-cljs          "1.7.48-SNAPSHOT"]
-                    [adzerk/boot-reload        "0.3.2-SNAPSHOT"]
+ :dependencies    '[[adzerk/boot-cljs          "1.7.48-5-SNAPSHOT"]
+                    [adzerk/boot-reload        "0.3.2"]
                     [deraen/boot-less          "0.4.0"]
                     [org.clojure/clojurescript "1.7.48"]
                     [pandeiro/boot-http        "0.6.3"]])
