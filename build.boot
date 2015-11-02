@@ -2,20 +2,23 @@
  :source-paths    #{"src" "test" "styles"}
  :resource-paths  #{"html" "build"}
  :dependencies    '[[adzerk/boot-cljs          "1.7.48-6"]
+                    [adzerk/boot-cljs-repl     "0.2.0"]
                     [adzerk/boot-reload        "0.4.1"]
                     [deraen/boot-less          "0.4.2"]
                     [org.clojure/clojurescript "1.7.145"]
                     [pandeiro/boot-http        "0.7.0"]])
 
 (require
- '[adzerk.boot-cljs   :refer [cljs]]
- '[adzerk.boot-reload :refer [reload]]
- '[deraen.boot-less   :refer [less]]
- '[pandeiro.boot-http :refer [serve]])
+ '[adzerk.boot-cljs      :refer [cljs]]
+ '[adzerk.boot-cljs-repl :refer [cljs-repl start-repl]]
+ '[adzerk.boot-reload    :refer [reload]]
+ '[deraen.boot-less      :refer [less]]
+ '[pandeiro.boot-http    :refer [serve]])
 
 (deftask dev []
   (comp
    (watch)
+   (cljs-repl)
    (reload :on-jsload 'frontend.dev/refresh)
    (less)
    (cljs)
