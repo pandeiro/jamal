@@ -17,8 +17,11 @@
 
 (deftask dev []
   (comp
-   (watch)
+   ;; placing this before `(watch)` means the `.cljs.edn`
+   ;; files get reset to their original values and cljs-repl's
+   ;; injection is not seen by the `(cljs)` task:
    (cljs-repl)
+   (watch)
    (reload :on-jsload 'frontend.dev/refresh)
    (less)
    (cljs)
