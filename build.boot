@@ -8,10 +8,10 @@
                     [pandeiro/boot-http        "0.7.0"]])
 
 (require
- '[adzerk.boot-cljs      :refer [cljs]]
- '[adzerk.boot-reload    :refer [reload]]
- '[deraen.boot-less      :refer [less]]
- '[pandeiro.boot-http    :refer [serve]])
+ '[adzerk.boot-cljs   :refer [cljs]]
+ '[adzerk.boot-reload :refer [reload]]
+ '[deraen.boot-less   :refer [less]]
+ '[pandeiro.boot-http :refer [serve]])
 
 (deftask dev []
   (comp
