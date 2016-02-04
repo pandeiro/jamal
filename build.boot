@@ -24,6 +24,6 @@
 (deftask release []
   (comp
    (less :compression true)
-   (cljs :optimizations :advanced)
+   (cljs :ids #{"main"} :optimizations :advanced)
    (sift :include #{#"(^index\.html|^main\.js|^styles.css)"})
    (target :dir #{"target"})))
