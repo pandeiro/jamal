@@ -1,6 +1,6 @@
 # jamal
 
-A [minimal](https://www.youtube.com/watch?v=FU1hm7KlfT8) ClojureScript template using Boot.
+A [minimal](https://www.youtube.com/watch?v=O4eAjoLrMTg) ClojureScript template using Boot.
 
 - Auto-compiles ClojureScript and LESS in development
 - Includes ClojureScript tests
