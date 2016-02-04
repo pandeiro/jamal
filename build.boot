@@ -1,11 +1,12 @@
 (set-env!
  :source-paths    #{"src" "test" "styles"}
  :resource-paths  #{"html" "build"}
- :dependencies    '[[adzerk/boot-cljs          "1.7.48-6"]
-                    [adzerk/boot-reload        "0.4.1"]
-                    [deraen/boot-less          "0.4.2"]
-                    [org.clojure/clojurescript "1.7.145"]
-                    [pandeiro/boot-http        "0.7.0"]])
+ :dependencies    '[[adzerk/boot-cljs          "1.7.228-1"]
+                    [adzerk/boot-reload        "0.4.5"]
+                    [deraen/boot-less          "0.5.0"]
+                    [org.clojure/clojurescript "1.7.228"]
+                    [pandeiro/boot-http        "0.7.0"]
+                    [reagent                   "0.6.0-alpha"]])
 
 (require
  '[adzerk.boot-cljs   :refer [cljs]]
@@ -25,4 +26,5 @@
   (comp
    (less :compression true)
    (cljs :optimizations :advanced)
-   (sift :include #{#"(^index\.html|^main\.js|^styles.css)"})))
+   (sift :include #{#"(^index\.html|^main\.js|^styles.css)"})
+   (target :dir #{"target"})))
