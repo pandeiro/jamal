@@ -1,8 +1,11 @@
-(ns frontend.app)
+(ns frontend.app
+  (:require
+   [devtools.core :as devtools]))
 
 (enable-console-print!)
 
 (def default-value :default)
 
 (defn init []
-  (println "Hello world"))
+  (devtools/install!)
+  (println :hello-world))

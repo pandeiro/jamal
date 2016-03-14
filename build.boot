@@ -5,7 +5,8 @@
                     [adzerk/boot-reload        "0.4.5"]
                     [deraen/boot-less          "0.5.0"]
                     [org.clojure/clojurescript "1.7.228"]
-                    [pandeiro/boot-http        "0.7.0"]])
+                    [pandeiro/boot-http        "0.7.0"]
+                    [binaryage/devtools        "0.5.2"]])
 
 (require
  '[adzerk.boot-cljs   :refer [cljs]]
